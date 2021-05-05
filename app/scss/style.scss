@@ -245,10 +245,7 @@
         margin: 0 10px 60px;
     }
    
-    &__box + .advices__box:nth-child(2){
-  /*       margin-left: auto;
-        margin-right: auto; */
-    }
+   
     &__subtext{
         position: absolute;
         top: 0;
@@ -267,7 +264,68 @@
     }
 }
 
-
+.social{
+    text-align: center;
+    margin-bottom: 150px;
+    &__text{
+        color: #333;
+        @extend %gilmedium;
+        font-size: 21px;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+    &__title{
+        margin-bottom: 60px;
+        @extend %notobold;
+        font-size: 30px;
+        color: #333;
+        line-height: 41px;
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    &__img{
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+   
+    &__link:nth-child(1) {
+       grid-column: span 2 ;
+       position: relative;
+       &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/social-play.png);
+        width: 70px;
+        height: 70px;
+       left: 50%;
+       bottom: 50%;
+       transform: translate(-50%, 50%);
+        
+    }
+      
+    }
+   
+    &__link:nth-child(6) {
+        grid-column: span 2 ;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/social-play.png);
+            width: 70px;
+            height: 70px;
+           left: 50%;
+           bottom: 50%;
+           transform: translate(-50%, 50%);
+        }
+     }
+}
 
 
 
