@@ -181,7 +181,38 @@
     }
 }
 
-
+.about{
+    background-color: #000;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 120px;
+    &__inner{
+        
+        max-width: 730px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    &__text{
+        color: #fff;
+        @extend %gilnorm;
+        font-size: 21px;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+    &__title{
+        margin-bottom: 60px;
+        @extend %notobold;
+        font-size: 30px;
+        line-height: 41px;
+    }
+    &__subtext{
+        margin-bottom: 75px;
+    }
+    &__btn{
+        background-color: #fff;
+        color: #333;
+    }
+}
 
 
 
