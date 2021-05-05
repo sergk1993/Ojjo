@@ -216,6 +216,56 @@
 
 
 
+.advices{
+    text-align: center;
+    margin-bottom: 120px;
+    &__text{
+        color: #333;
+        @extend %gilmedium;
+        font-size: 21px;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+    &__title{
+        margin-bottom: 60px;
+        @extend %notobold;
+        font-size: 30px;
+        color: #333;
+        line-height: 41px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__box{
+        width: 350px;
+        height: 370px;
+        position: relative;
+        margin: 0 10px 60px;
+    }
+   
+    &__box + .advices__box:nth-child(2){
+  /*       margin-left: auto;
+        margin-right: auto; */
+    }
+    &__subtext{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 220px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+        line-height: 140%;
+        font-size: 21px;
+    }
+}
 
 
 
