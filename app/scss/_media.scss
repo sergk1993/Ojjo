@@ -98,4 +98,15 @@
     .advices {
         margin-bottom: 50px;
     }
+    .social{
+        margin-bottom: 50px;
+    }
+    .social__link:nth-child(1)::before{
+        width: 50px;
+        height: 50px;
+    }
+    .social__link:nth-child(6)::before{
+        width: 50px;
+        height: 50px;
+    }
 }
