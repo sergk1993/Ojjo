@@ -86,4 +86,10 @@
         font-size: 28px;
         line-height: 30px;
     }
+    .goods__box{
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+    .goods{
+        margin-bottom: 50px;
+    }
 }
