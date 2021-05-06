@@ -270,10 +270,14 @@
         flex-wrap: wrap;
     }
     &__box{
-        width: 350px;
-        height: 370px;
+        max-width: 350px;
+        max-height: 370px;
         position: relative;
         margin: 0 10px 60px;
+    }
+    &__img{
+        width: 100%;
+        
     }
    
    
