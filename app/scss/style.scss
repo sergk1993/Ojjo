@@ -397,6 +397,7 @@
         color: #000;
         margin: 20px;
         @extend %gilmedium;
+        z-index: 2;
         &::placeholder{
             text-transform: uppercase;
             @extend %gilmedium;
